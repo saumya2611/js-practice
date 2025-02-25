@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Shallow Copy
+      // Shallow Copy using Spread Operator
+
+      //   let obj1 = { name: "Alice", address: { city: "New York" } };
+
+      //   // Shallow Copy using Spread Operator
+      //   let obj2 = { ...obj1 };
+
+      //   obj2.address.city = "Los Angeles"; // Modifies obj1 too!
+
+      //   console.log(obj1.address.city); // "Los Angeles"
+      //   console.log(obj2.address.city); // "Los Angeles"
+
+      //  Deep Copy
+      // let obj1 = { name: "Alice", address: { city: "New York" } };
+
+      // // Deep Copy using JSON
+      // let obj2 = JSON.parse(JSON.stringify(obj1));
+
+      // obj2.address.city = "Los Angeles"; // Does NOT modify obj1
+
+      // console.log(obj1.address.city); // "New York"
+      // console.log(obj2.address.city); // "Los Angeles"
+
+      let obj1 = { name: "saumya", address: { city: "kanpur" } };
+      let obj2 = JSON.parse(JSON.stringify(obj1));
+      obj2.address.city = "Delhi";
+      console.log(obj1.address.city);
+      console.log(obj2.address.city);
+
+      //  Rest Operator (...)
+
+      // function sum(...num) {
+      //   return num.reduce((acc, num) => acc * num);
+      // }
+
+      // // console.log(sum(1, 2, 3, 4)); // Output: 15
+
+      // const arr1 = [1, 2, 3];
+      // const arr2 = [4, 5, 6];
+      // const merge = [...arr1, ...arr2];
+      // //  console.log("merge--------->", merge);
+
+      // const obj1 = { a: 1, b: 2 };
+      // const obj2 = { ...obj1, c: 3, d: 4 };
+      // // console.log("obj2------>", obj2);
+
+      // const numbers = [1, 2, 3, 4, 5];
+      // function mul(a, b, c, d, e) {
+      //   return a * b * c * d * e;
+      // }
+      // console.log(mul(...numbers));
+
+      // const obj = { name: "saumya", age: 25, add: { city: "kanpur" } };
+      // const newObj = { ...obj };
+      // newObj.add.city = "delhi";
+      // console.log("obj---------->", obj);
+      // console.log("newObj---------->", newObj);
+    </script>
+  </body>
+</html>

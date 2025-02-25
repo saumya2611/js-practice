@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Object.keys(obj)	Returns an array of property names (keys).
+      // Object.values(obj)	Returns an array of property values.
+      // Object.entries(obj)	Returns an array of [key, value] pairs.
+      // Object.assign(target, source)	Copies properties from one object to another.
+      // Object.hasOwnProperty(prop)
+
+      const user = {
+        name: "saumya",
+        age: 24,
+      };
+
+      console.log(Object.keys(user));
+      console.log(Object.values(user));
+      console.log(Object.entries(user));
+
+      // Object.assign()
+      const obj1 = { a: 1 };
+      const obj2 = { b: 2 };
+      const merged = Object.assign({}, obj1, obj2);
+      console.log("merged------->", merged);
+
+      // Object.hasOwnProperty
+      console.log(user.hasOwnProperty("age")); // true
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="button">Click Me</button>
+
+    <script>
+      const button = document.getElementById("button");
+
+      const buttonClick = () => {
+        console.log("button clicked...");
+      };
+
+      button.addEventListener("click", buttonClick);
+
+      //   let a = null;
+      //   console.log("a====>", a);
+      //   let z = "hello";
+      //   console.log(Number(z));
+
+      const mySet = new Set([1, 2, 3, 4, 4, 5]);
+      console.log(mySet); // Output: Set {1, 2, 3, 4, 5} (removes duplicates)
+    </script>
+  </body>
+</html>

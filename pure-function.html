@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1. Pure functuon always returns the same output for same input
+      //   function add(a, b) {
+      //     return a + b;
+      //   }
+      //   console.log(add(3, 2));
+
+      // 2. First class function
+      // first class function in javascript is a function that treated like a value means
+      // You can assign a function to a variable
+      //   const sayHello = function (name) {
+      //     return `Hello ${name}`;
+      //   };
+      //   console.log(sayHello("saumya"));
+
+      // You can pass a function as an arugument to another function
+      //   function greet(callBack) {
+      //     return console.log(callBack("suyash"));
+      //   }
+      //   greet(sayHello);
+
+      // You can return a function from another function
+      //   function multiPly(x) {
+      //     return function (y) {
+      //       return x * y;
+      //     };
+      //   }
+      //   const double = multiPly(2);
+      //   console.log(double(5));
+
+      // 3. Arrow function
+      // you can write a function in a shorter way. It was introduced in ES6
+
+      //   const add = (a, b) => a + b;
+      //   const mul = (a, b) => {
+      //     return a * b;
+      //   };
+      //   const greet = (name) => `Hello ${name}`;
+      //   console.log(greet("sonaa"));
+      //   console.log(add(5, 5));
+      //   console.log(mul(5, 5));
+
+      // 4. (HOC) Higher-Order Function in JavaScript
+      //   function add(a, b) {
+      //     return a + b;
+      //   }
+      //   console.log(add(5, 5));
+
+      //   function call(callback) {
+      //     return callback();
+      //   }
+      //   console.log(add(5, 3));
+
+      //   function sayGoodBye() {
+      //     console.log("GoodBye");
+      //   }
+
+      //   function greet(name, callBack) {
+      //     console.log(`Hello ${name}`);
+      //     callBack();
+      //   }
+      //   greet("saumya", sayGoodBye);
+
+      // 5. A recursion function is a function that calls itself until it reaches a base condition to stop.
+
+      function countdown(n) {
+        if (n <= 0) {
+          console.log("Done!");
+          return;
+        }
+        console.log(n);
+        countdown(n - 1); // Recursive call
+      }
+
+      countdown(5); // 5 4 3 2 1 done
+    </script>
+  </body>
+</html>

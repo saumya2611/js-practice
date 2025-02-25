@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Array Destructuring
+      //   const arr = [1, 2, 3, 4, 5];
+      //   const [a, b, c] = arr;
+      //   console.log("a====>", a);
+
+      // Object Destructuring
+      //   let person = {
+      //     name: "saumya",
+      //     age: 25,
+      //     country: { city: "kanpur", city1: "delhi" },
+      //   };
+      //   const {
+      //     name,
+      //     age,
+      //     country: { city1 },
+      //   } = person;
+      //   console.log("name------>", name, "age------>", age, city1);
+
+      // Nested Object Destructuring
+      //   let person2 = {
+      //     name: "suyash",
+      //     surname: "mishra",
+      //     country: { city: "kanpur" },
+      //   };
+
+      //  4. Function Parameter Destructuring
+      //  Used in function arguments.
+      //   function greet({ name, surname, country }) {
+      //     return `name is ${name} and surname is ${surname} city is ${country.city}`;
+      //   }
+      //   console.log(greet(person2));
+
+      //   const person = { name: "suyash", age: 24 };
+      //   function greet({ name, age }) {
+      //     return `name is ${name} and age is ${age} `;
+      //   }
+      //   console.log(greet(person)); // “suyash”, 24
+
+      const data = { name: "saumya", age: 24 };
+      localStorage.setItem("name", JSON.stringify(data.name));
+
+      const userName = JSON.parse(localStorage.getItem("name"));
+      console.log(userName);
+
+      //   const userData = JSON.parse(localStorage.getItem("userData"));
+      //   console.log("userData====>", userData);
+
+      document.cookie = "name=John; expires=Fri, 18 Feb 2025 12:00:00 UTC";
+      console.log(document.cookie); // Output: "name=John"
+    </script>
+  </body>
+</html>

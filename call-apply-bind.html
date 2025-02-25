@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const person1 = {
+        FName: "Saumya",
+        LName: "Singh",
+        fullName: function (city, country) {
+          return (
+            this.FName + " " + this.LName + " " + " " + city + " " + country
+          );
+        },
+      };
+
+      const person2 = {
+        FName: "Suyash",
+        LName: "Mishra",
+        // fullName: function () {
+        //   return this.FName + " " + this.LName;
+        // },
+      };
+      //   const data = {
+      //     city: "pune",
+      //     contry: "india",
+      //     mob: 2323,
+      //   };
+      //   console.log(person1.fullName.call(person2, data));
+
+      // call
+      console.log(person1.fullName.call(person2, "Pune", "India"));
+
+      // Apply
+      console.log(person1.fullName.apply(person2, ["Pune", "India"]));
+
+      // bind
+      const result = person1.fullName.bind(person2, "Pune", "India");
+
+      //  ek object ke andar dusre object ki method ko  use kr skte hai
+      // call methods takes two parameter jo first argument hai vo aiese
+      //   object ko denote krega jisme hme call method komuse krna hai
+
+      // Apply
+    </script>
+  </body>
+</html>

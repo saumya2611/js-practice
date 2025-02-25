@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Event delegation -->
+    <!-- <div id="myElement">
+      <button>Button 1</button>
+      <button>Button 2</button>
+      <button>Button 3</button>
+    </div> -->
+
+    <!-- Event Bubbling -->
+
+    <div id="grandparent" style="padding: 20px; background-color: lightcoral">
+      Grandparent Div
+      <div id="parent" style="padding: 20px; background-color: lightblue">
+        Parent Div
+        <button id="child">Click Me</button>
+      </div>
+    </div>
+
+    <!-- Event Capturing -->
+    <!-- 
+    <div id="grandparent" style="padding: 20px; background-color: lightcoral">
+      Grandparent Div
+      <div id="parent" style="padding: 20px; background-color: lightblue">
+        Parent Div
+        <button id="child">Click Me</button>
+      </div>
+    </div> -->
+
+    <!-- <form id="myForm">
+      <input type="text" placeholder="Enter something" />
+      <button type="submit">Submit</button>
+    </form> -->
+  </body>
+</html>

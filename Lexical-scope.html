@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   var name = "saumya";
+
+      //   function speak() {
+      //     // it's create new scope using var
+      //     var name = "suyash";
+      //     console.log("name=====>", name);
+      //   }
+      //   speak();
+      //   console.log("name=====>", name);
+
+      //   if (name.length > 0) {
+      //     // it does'n make new scope
+      //     var name = "viraj";
+      //     console.log("name=====>", name);
+      //   }
+
+      //   var abc = 5;
+
+      //   function myFunc() {
+      //     var myValue = 10;
+      //     console.log(abc);
+      //     console.log(myValue);
+
+      //     function innerFunction() {
+      //       // inner function ka lexical scope outer function ke scope k equal hogakmnjjgbkmnnjjjjhgvbn
+
+      //       console.log("inner function==========>");
+
+      //       const def = 20;
+      //       console.log(def);
+      //       console.log(abc);
+      //       console.log(myValue);
+      //     }
+      //     innerFunction();
+      //   }
+      //   myFunc();
+
+      //   {
+      //     var a = 10;
+      //   }
+      //   console.log(a);
+
+      //   var abc = 5;
+
+      //   function myFunc() {
+      //     var myValue = 10;
+      //     console.log(abc);
+      //     console.log(myValue);
+
+      //     return function innerFunction() {
+      //       console.log("inner function==========>");
+
+      //       const def = 20;
+      //       console.log(def);
+      //       console.log(abc);
+      //       console.log(myValue);
+      //     };
+      //   }
+      //   const func = myFunc();
+      //   func();
+
+      //   let num = 1;
+
+      //   function myValue() {
+      //     console.log("outer Function ======>", num);
+
+      //     return {
+      //       incerement: function () {
+      //         console.log("incerement========>");
+
+      //         num = num + 1;
+      //         console.log(num);
+      //       },
+      //       decrement: function () {
+      //         console.log("decrement========>");
+
+      //         num = num - 1;
+      //         console.log(num);
+      //       },
+      //     };
+      //   }
+      //   const operation = myValue();
+      //   operation.incerement();
+      //   operation.decrement();
+
+      //   function myNum() {
+      //     console.log("num=======>", num);
+      //   }
+      //   myNum();
+
+      //   console.log("5" + 3);
+
+      //   function prom(bool) {
+      //     return new Promise((relove, reject) => {
+      //       console.log("fetching data , please wait");
+
+      //       setTimeout(() => {
+      //         if (bool) {
+      //           relove("I am successfull");
+      //         } else {
+      //           reject("I am failed");
+      //         }
+      //       }, 1000);
+      //     });
+      //   }
+
+      //   let onFulfillment = (result) => {
+      //     console.log(result);
+      //     console.log("hello");
+      //   };
+
+      //   let onFailure = (error) => {
+      //     console.log(error);
+      //   };
+
+      //   prom(true)
+      //     .then((result) => {
+      //       console.log(result);
+      //     })
+      //     .catch((error) => {
+      //       console.log(error);
+      //     });
+      //   console.log("prom=====>", prom(false));
+
+      //   let p1 = new Promise((resolve, reject) => {
+      //     setTimeout(() => {
+      //       console.log(`The first promise resolved`);
+      //       resolve(10);
+      //     }, 1 * 1000);
+      //   });
+
+      //   let p2 = new Promise((resolve, reject) => {
+      //     setTimeout(() => {
+      //       console.log(`The  second promise failed`);
+      //       reject("Failed");
+      //     }, 2 * 1000);
+      //   });
+
+      //   let p3 = new Promise((resolve, reject) => {
+      //     setTimeout(() => {
+      //       console.log(`The  third promise resolved`);
+      //       resolve(30);
+      //     }, 3 * 1000);
+      //   });
+
+      //   Promise.all([p1, p2, p3])
+      //     .then((result) => {
+      //       console.log(result);
+      //     })
+      //     .catch((error) => {
+      //       console.log(error);
+      //     });
+
+      //   async function test() {
+      //     return "Hello";
+      //   }
+
+      async function test() {
+        console.log(1);
+        await console.log(2);
+        console.log(3);
+      }
+      console.log(5);
+
+      test();
+      console.log(4);
+
+      //   test().then((result) => {
+      //     console.log(result);
+      //   });
+    </script>
+  </body>
+</html>
