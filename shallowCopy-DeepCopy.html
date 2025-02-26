@@ -31,11 +31,11 @@
       // console.log(obj1.address.city); // "New York"
       // console.log(obj2.address.city); // "Los Angeles"
 
-      // let obj1 = { name: "saumya", address: { city: "kanpur" } };
-      // let obj2 = JSON.parse(JSON.stringify(obj1));
-      // obj2.address.city = "Delhi";
-      // console.log(obj1.address.city);
-      // console.log(obj2.address.city);
+      let obj1 = { name: "saumya", address: { city: "kanpur" } };
+      let obj2 = JSON.parse(JSON.stringify(obj1));
+      obj2.address.city = "Delhi";
+      console.log(obj1.address.city);
+      console.log(obj2.address.city);
 
       //  Rest Operator (...)
 
